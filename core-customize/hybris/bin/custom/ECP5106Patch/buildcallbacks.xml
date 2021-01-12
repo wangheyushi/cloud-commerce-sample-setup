@@ -98,36 +98,34 @@
           platform/ext/processing/bin/processingserver.jar
 		  bin/platform/ext/processing/project.properties
 		  bin/platform/project.properties
-		  <sequential>
+		  
+	 -->
+	 <sequential>
 
 	        <if>
                 <available file="${HYBRIS_BIN_DIR}/platform/ext/core/bin/coreserver.jar"/>
                 <then>
                     <echo>###### !!!! PATCHING ECP5106Patch !!!! #####</echo>
-		    <delete file="${HYBRIS_BIN_DIR}/platform/project.properties"/>
-                    <move file="${ext.ECP5106Patch.path}/lib/platform/project.properties"
-                          tofile="${HYBRIS_BIN_DIR}/platform/project.properties"/>
+		            <delete file="${HYBRIS_BIN_DIR}/platform/project.properties"/>
+					<copy file = "${ext.ECP5106Patch.path}/lib/platform/project.properties" tofile = "${HYBRIS_BIN_DIR}/platform/project.properties"></copy>
 						  
 	            <delete file="${HYBRIS_BIN_DIR}/platform/ext/processing/project.properties"/>
-                    <move file="${ext.ECP5106Patch.path}/lib/processing/project.properties"
-                          tofile="${HYBRIS_BIN_DIR}/platform/ext/processing/project.properties"/>
-			
+				<copy file = "${ext.ECP5106Patch.path}/lib/processing/project.properties" tofile = "${HYBRIS_BIN_DIR}/platform/ext/processing/project.properties"></copy>
+
                     <delete file="${HYBRIS_BIN_DIR}/platform/ext/core/bin/coreserver.jar"/>
-                    <move file="${ext.ECP5106Patch.path}/lib/coreserver.jar"
-                          tofile="${HYBRIS_BIN_DIR}/platform/ext/core/bin/coreserver.jar"/>
+					<copy file = "${ext.ECP5106Patch.path}/lib/coreserver.jar" tofile = "${HYBRIS_BIN_DIR}/platform/ext/core/bin/coreserver.jar"></copy>
+
 						  
 		    <delete file="${HYBRIS_BIN_DIR}/platform/ext/processing/bin/processingserver.jar"/>
-                    <move file="${ext.ECP5106Patch.path}/lib/processingserver.jar"
-                          tofile="${HYBRIS_BIN_DIR}/platform/ext/processing/bin/processingserver.jar"/>
+			<copy file = "${ext.ECP5106Patch.path}/lib/processingserver.jar" tofile = "${HYBRIS_BIN_DIR}/platform/ext/processing/bin/processingserver.jar"></copy>
 
+                    
 					
 						  
                 </then>
             </if>
 
 		</sequential>
-	 -->
-	 
 		
 	</macrodef>
 
