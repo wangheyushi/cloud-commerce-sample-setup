@@ -98,9 +98,7 @@
           platform/ext/processing/bin/processingserver.jar
 		  bin/platform/ext/processing/project.properties
 		  bin/platform/project.properties
-	 -->
-	 
-		<sequential>
+		  <sequential>
 
 	        <if>
                 <available file="${HYBRIS_BIN_DIR}/platform/ext/core/bin/coreserver.jar"/>
@@ -128,6 +126,9 @@
             </if>
 
 		</sequential>
+	 -->
+	 
+		
 	</macrodef>
 
 </project>
