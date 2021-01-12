@@ -26,10 +26,7 @@
                 "aspect": "accstorefront",
                 "location": "/hybris/config/environments/accstorefront.properties"
              },
-             {
-                "aspect": "api",
-                "location": "/hybris/config/environments/api.properties"
-             },
+            
              {
                 "aspect": "backoffice",
                 "location": "/hybris/config/environments/backoffice.properties"
@@ -45,6 +42,16 @@
         }
     },
 	"storefrontAddons":[ 
+	   { 
+		  "addon":"smarteditaddon",
+		  "storefront":"yacceleratorstorefront",
+		  "template":"yacceleratorstorefront"
+	   },
+	   { 
+		  "addon":"acceleratorwebservicesaddon",
+		  "storefront":"ycommercewebservices",
+		  "template":"ycommercewebservices"
+	   }
 	   
 	],
 	"properties":[ 
@@ -120,8 +127,15 @@
 			 { 
 				"name":"backoffice",
 				"contextPath":"/backoffice"
+			 },
+			 { 
+				"name":"orbeonweb",
+				"contextPath":"/web-orbeon"
+			 },
+			 { 
+				"name":"xyformsweb",
+				"contextPath":"/xyformsweb"
 			 }
-			
 		  ]
 	   },
 	   { 
@@ -172,81 +186,10 @@
 			 { 
 				"name":"acceleratorservices",
 				"contextPath":"/acceleratorservices"
-			 }
-		  ]
-	   },
-	   { 
-		  "name":"api",
-		  "properties":[ 
-			 { 
-				"key":"xss.filter.header.X-Frame-Options",
-				"value":""
 			 },
 			 { 
-				"key":"storefrontContextRoot",
-				"value":"/yacceleratorstorefront"
-			 }
-		  ],
-		  "webapps":[ 
-			 { 
-				"name":"mediaweb",
-				"contextPath":"/medias"
-			 },
-			 { 
-				"name":"adaptivesearchwebservices",
-				"contextPath":"/adaptivesearchwebservices"
-			 }
-			 { 
-				"name":"ycommercewebservices",
-				"contextPath":"/rest"
-			 },
-			 { 
-				"name":"smartedit",
-				"contextPath":"/smartedit"
-			 },
-			 { 
-				"name":"cmssmartedit",
-				"contextPath":"/cmssmartedit"
-			 },
-			 { 
-				"name":"smarteditwebservices",
-				"contextPath":"/smarteditwebservices"
-			 },
-			 { 
-				"name":"cmssmarteditwebservices",
-				"contextPath":"/cmssmarteditwebservices"
-			 },
-			 { 
-				"name":"personalizationsmartedit",
-				"contextPath":"/personalizationsmartedit"
-			 },
-			 { 
-				"name":"personalizationpromotionssmartedit",
-				"contextPath":"/personalizationpromotionssmartedit"
-			 },
-			 { 
-				"name":"oauth2",
-				"contextPath":"/authorizationserver"
-			 },
-			 { 
-				"name":"cmswebservices",
-				"contextPath":"/cmswebservices"
-			 },
-			 { 
-				"name":"permissionswebservices",
-				"contextPath":"/permissionswebservices"
-			 },
-			 { 
-				"name":"previewwebservices",
-				"contextPath":"/previewwebservices"
-			 },
-			 { 
-				"name":"personalizationwebservices",
-				"contextPath":"/personalizationwebservices"
-			 },
-			 { 
-				"name":"personalizationsearchsmartedit",
-				"contextPath":"/personalizationsearchsmartedit"
+				"name":"hac",
+				"contextPath":"/hac"
 			 }
 		  ]
 	   },
