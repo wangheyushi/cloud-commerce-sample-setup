@@ -98,8 +98,6 @@
 
 
 <!-- Sample Custom Extensions -->
-    <extension name='kiwi' />
-    <extension name='tiger'/>
 	  
 	  <extension name='ECP5106Patch'/>
 
