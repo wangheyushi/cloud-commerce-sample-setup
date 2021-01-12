@@ -92,7 +92,7 @@
 	
 	     ${ear.path}: 			path to ear
 	 -->
-	<macrodef name="ECP5106Patch_after_build">
+	<macrodef name="ECP5106Patch_before_build">
 	<!-- 
 	      platform/ext/core/bin/coreserver.jar
           platform/ext/processing/bin/processingserver.jar
