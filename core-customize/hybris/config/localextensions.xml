@@ -63,7 +63,7 @@
     <extension name='textfieldconfiguratortemplateatddtests' />
     <extension name='pcmbackofficesamplesaddon' />
 
-    <extension name='ECP5106Patch' />
+    <!--<extension name='ECP5106Patch' />-->
 
 
 
