@@ -102,25 +102,27 @@
 	 
 		<sequential>
 
-			 <if>
+	        <if>
                 <available file="${HYBRIS_BIN_DIR}/platform/ext/core/bin/coreserver.jar"/>
                 <then>
                     <echo>###### !!!! PATCHING ECP5106Patch !!!! #####</echo>
+		    <delete file="${HYBRIS_BIN_DIR}/platform/project.properties"/>
+                    <move file="${ext.ECP5106Patch.path}/lib/platform/project.properties"
+                          tofile="${HYBRIS_BIN_DIR}/platform/project.properties"/>
+						  
+	            <delete file="${HYBRIS_BIN_DIR}/platform/ext/processing/project.properties"/>
+                    <move file="${ext.ECP5106Patch.path}/lib/processing/project.properties"
+                          tofile="${HYBRIS_BIN_DIR}/platform/ext/processing/project.properties"/>
+			
                     <delete file="${HYBRIS_BIN_DIR}/platform/ext/core/bin/coreserver.jar"/>
                     <move file="${ext.ECP5106Patch.path}/lib/coreserver.jar"
                           tofile="${HYBRIS_BIN_DIR}/platform/ext/core/bin/coreserver.jar"/>
 						  
-				    <delete file="${HYBRIS_BIN_DIR}/platform/ext/processing/bin/processingserver.jar"/>
+		    <delete file="${HYBRIS_BIN_DIR}/platform/ext/processing/bin/processingserver.jar"/>
                     <move file="${ext.ECP5106Patch.path}/lib/processingserver.jar"
                           tofile="${HYBRIS_BIN_DIR}/platform/ext/processing/bin/processingserver.jar"/>
 
-					<delete file="${HYBRIS_BIN_DIR}/platform/project.properties"/>
-                    <move file="${ext.ECP5106Patch.path}/lib/platform/project.properties"
-                          tofile="${HYBRIS_BIN_DIR}/platform/project.properties"/>
-						  
-				    <delete file="${HYBRIS_BIN_DIR}/platform/ext/processing/project.properties"/>
-                    <move file="${ext.ECP5106Patch.path}/lib/processing/project.properties"
-                          tofile="${HYBRIS_BIN_DIR}/platform/ext/processing/project.properties"/>
+					
 						  
                 </then>
             </if>
