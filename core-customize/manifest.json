@@ -45,121 +45,7 @@
         }
     },
 	"storefrontAddons":[ 
-	   { 
-		  "addon":"commerceorgsamplesaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"promotionenginesamplesaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"smarteditaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"textfieldconfiguratortemplateaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"assistedservicestorefront",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"assistedservicepromotionaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"customerticketingaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"orderselfserviceaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"adaptivesearchsamplesaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"multicountrysampledataaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"pcmbackofficesamplesaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"personalizationpromotionssampledataaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"personalizationsampledataaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"personalizationsearchsamplesaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"personalizationaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"acceleratorwebservicesaddon",
-		  "storefront":"ycommercewebservices",
-		  "template":"ycommercewebservices"
-	   },
-	   { 
-		  "addon":"profiletagaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"cmsoccaddon",
-		  "storefront":"ycommercewebservices",
-		  "template":"ycommercewebservices"
-	   },
-	   { 
-		  "addon":"ordermanagementaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"merchandisingaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"merchandisingstorefrontsampledataaddon",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"xyformssamples",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   },
-	   { 
-		  "addon":"xyformsstorefrontcommons",
-		  "storefront":"yacceleratorstorefront",
-		  "template":"yacceleratorstorefront"
-	   }
+	   
 	],
 	"properties":[ 
 	   { 
@@ -234,15 +120,8 @@
 			 { 
 				"name":"backoffice",
 				"contextPath":"/backoffice"
-			 },
-			 { 
-				"name":"orbeonweb",
-				"contextPath":"/web-orbeon"
-			 },
-			 { 
-				"name":"xyformsweb",
-				"contextPath":"/xyformsweb"
 			 }
+			
 		  ]
 	   },
 	   { 
@@ -293,18 +172,6 @@
 			 { 
 				"name":"acceleratorservices",
 				"contextPath":"/acceleratorservices"
-			 },
-			 { 
-				"name":"hac",
-				"contextPath":"/hac"
-			 },
-			 { 
-				"name":"orbeonweb",
-				"contextPath":"/web-orbeon"
-			 },
-			 { 
-				"name":"xyformsweb",
-				"contextPath":"/xyformsweb"
 			 }
 		  ]
 	   },
@@ -328,19 +195,7 @@
 			 { 
 				"name":"adaptivesearchwebservices",
 				"contextPath":"/adaptivesearchwebservices"
-			 },
-			 { 
-				"name":"odata2webservices",
-				"contextPath":"/odata2webservices"
-			 },
-			 { 
-				"name":"yacceleratorstorefront",
-				"contextPath":"/yacceleratorstorefront"
-			 },
-			 { 
-				"name":"acceleratorservices",
-				"contextPath":"/acceleratorservices"
-			 },
+			 }
 			 { 
 				"name":"ycommercewebservices",
 				"contextPath":"/rest"
@@ -392,18 +247,6 @@
 			 { 
 				"name":"personalizationsearchsmartedit",
 				"contextPath":"/personalizationsearchsmartedit"
-			 },
-			 { 
-				"name":"merchandisingsmartedit",
-				"contextPath":"/merchandisingsmartedit"
-			 },
-			 { 
-				"name":"merchandisingcmswebservices",
-				"contextPath":"/merchandisingcmswebservices"
-			 },
-			 { 
-				"name":"warehousingwebservices",
-				"contextPath":"/warehousingwebservices"
 			 }
 		  ]
 	   },
@@ -426,18 +269,6 @@
 			 }
 		  ]
 	   }
-	],
-	"tests": {
-        "extensions": [
-            "kiwi",
-            "tiger"
-        ],
-        "annotations": [
-            "UnitTests",
-            "IntegrationTests"
-        ],
-        "packages": [
-            "com.acme.*"
-        ]
-    }
+	]
+	
  }
